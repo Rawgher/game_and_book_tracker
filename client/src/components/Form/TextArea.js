@@ -1,7 +1,12 @@
 import React from "react";
+import "./Form.css";
 
 export const TextArea = props => (
-  <div className="form-group">
-    <textarea className="form-control" rows="20" {...props} />
+  <div className="pa2 black-80">
+    <textarea
+      className="pa2 input-reset ba bg-transparent w-100 measure2 borderColor"
+      rows="20"
+      {...props}
+    />
   </div>
 );
