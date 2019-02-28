@@ -32,9 +32,9 @@ class Books extends Component {
             </Jumbotron>
             <form>
               <Input name="title" placeholder="Title (required)" />
-              <Input name="author" placeholder="Author (required)" />
+              <Input name="system" placeholder="System (required)" />
               <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
-              <FormBtn>Submit Book</FormBtn>
+              <FormBtn>Submit Game</FormBtn>
             </form>
           </div>
           <div className="fl w-50">
