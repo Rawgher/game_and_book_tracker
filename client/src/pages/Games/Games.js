@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
-import { Col, Row, Container } from "../../components/Grid";
 import Nav from "../../components/Nav";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
@@ -24,12 +23,12 @@ class Books extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <div className="fl w-100">
         <Nav />
-        <Row>
-          <Col size="md-6">
+        <div className="fl w-100">
+          <div className="fl w-50">
             <Jumbotron>
-              <h1>Games</h1>
+              <h1>Games To Play</h1>
             </Jumbotron>
             <form>
               <Input name="title" placeholder="Title (required)" />
@@ -37,8 +36,8 @@ class Books extends Component {
               <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
               <FormBtn>Submit Book</FormBtn>
             </form>
-          </Col>
-          <Col size="md-6 sm-12">
+          </div>
+          <div className="fl w-50">
             <Jumbotron>
               <h1>Games On My List</h1>
             </Jumbotron>
@@ -58,9 +57,9 @@ class Books extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     );
   }
 }
